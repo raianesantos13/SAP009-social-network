@@ -1,5 +1,5 @@
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { login } from '../Firebase/logincadastro.js';
+import { login } from '../Firebase/login.js';
 
 jest.mock('firebase/auth');
 

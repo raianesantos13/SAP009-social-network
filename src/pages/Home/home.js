@@ -1,4 +1,3 @@
-
 export default function Home() {
   const container = document.createElement('div');
   const template = `<h1>Faça o seu login</h1>
@@ -28,5 +27,5 @@ export default function Home() {
         alert(error);
       });
   });
-  return container;
+  return container;
 }

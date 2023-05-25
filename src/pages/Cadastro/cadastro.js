@@ -1,5 +1,3 @@
-
-
 export default function Cadastro() {
   const containerCadastro = document.createElement('div');
   containerCadastro.id = 'containerCadastro';

@@ -1,4 +1,4 @@
-import {
+/*import {
   getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile,
 } from 'firebase/auth';
 import { app } from './firebase.js';
@@ -15,4 +15,4 @@ export async function criarUsuario(email, senha, usuario) {
   await updateProfile(auth.currentUser, {
     displayName: usuario,
   });
-}
+}*/

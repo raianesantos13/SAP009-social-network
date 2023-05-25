@@ -1,6 +1,6 @@
 import Home from './pages/Home/home.js';
 import Cadastro from './pages/Cadastro/cadastro.js';
-import Feed from './pages/Feed/feed.js';
+import Feed from './pages/Feed/feed.js'
 
 const main = document.querySelector('#root');
 const init = () => {
@@ -24,5 +24,5 @@ const init = () => {
 
 window.addEventListener('load', () => {
   main.appendChild(Home());
-  init();
+  init();
 });
