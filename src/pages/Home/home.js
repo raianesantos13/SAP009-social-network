@@ -1,4 +1,4 @@
-import { login } from '../../Firebase/logincadastro.js';
+import { login } from '../../Firebase/login.js';
 
 export default function Home() {
   const container = document.createElement('div');
@@ -29,5 +29,5 @@ export default function Home() {
         alert(error);
       });
   });
-  return container;
+  return container;
 }
