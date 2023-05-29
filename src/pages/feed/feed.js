@@ -1,7 +1,8 @@
-// função que o elemento HTML da Home do site
+import { addPosts } from '../../Firebase/firestore.js';
+
 export default function Feed() {
-  const containerFeed = document.createElement("div")
-  containerFeed.id = "containerFeed"
+  const containerFeed = document.createElement('div');
+  containerFeed.id = 'containerFeed';
   containerFeed.innerHTML = `<title>A rede social para leitoras</title>
   <h1>Olá, !</h1>
   <p>Compartilhe sua opinião, indique seus livros favoritos e curta as leituras das suas amigas!</p>
@@ -12,10 +13,12 @@ export default function Feed() {
   </div>
   <div class="buttons">
   <button type="button">Postar</button>
-  </div>`
+  </div>`;
 
-  containerFeed.querySelector("button").addEventListener('click', function () {
-   console.log("funcionando");
+  containerFeed.querySelector('button').addEventListener('click', () => {
+    const text = containerFeed.querySelector('textarea').value;
+    addPosts(text);
+    console.log(text);
   });
   return containerFeed;
 }
