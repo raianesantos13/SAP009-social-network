@@ -1,6 +1,6 @@
-import Home from './pages/Home/home.js';
-import Cadastro from './pages/Cadastro/cadastro.js';
-import Feed from './pages/Feed/feed.js'
+import home from './pages/home/home.js';
+import cadastro from './pages/cadastro/cadastro.js';
+import feed from './pages/feed/feed.js';
 
 const main = document.querySelector('#root');
 const init = () => {
@@ -8,21 +8,21 @@ const init = () => {
     main.innerHTML = '';
     switch (window.location.hash) {
       case '#home':
-        main.appendChild(Home());
+        main.appendChild(home());
         break;
       case '#cadastro':
-        main.appendChild(Cadastro());
+        main.appendChild(cadastro());
         break;
       case '#feed':
-        main.appendChild(Feed());
+        main.appendChild(feed());
         break;
       default:
-        main.appendChild(Home());
+        main.appendChild(home());
     }
   });
 };
 
 window.addEventListener('load', () => {
-  main.appendChild(Home());
-  init();
+  main.appendChild(home());
+  init();
 });

@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+import { register } from '../../Firebase/cadastroFirebase.js';
+
+=======
+>>>>>>> 2de4217657fb0e1266245ca00369f1a7b5ffddb1
 export default function Cadastro() {
   const containerCadastro = document.createElement('div');
   containerCadastro.id = 'containerCadastro';
