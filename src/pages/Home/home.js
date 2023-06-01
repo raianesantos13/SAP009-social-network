@@ -24,10 +24,10 @@ export default function Home() {
     login(email.value, password.value)
       .then(() => {
         window.location.hash = '#feed';
-      })
-      .catch((error) => {
-        alert(error);
       });
+    // .catch((error) => {
+    // alert(error);
   });
+  // });
   return container;
-}
+} //

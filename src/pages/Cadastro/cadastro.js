@@ -1,4 +1,4 @@
-import { register } from '../../Firebase/cadastro.js';
+import { register } from '../../Firebase/cadastroFirebase.js';
 
 export default function Cadastro() {
   const containerCadastro = document.createElement('div');

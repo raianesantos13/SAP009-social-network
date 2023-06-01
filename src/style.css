@@ -25,9 +25,23 @@
     max-width: 300px;
     }
     
-    header{
-        text-align: left;
-        font-size: 20px;
+    .headercontainer{
+        display:flex;
+    }
+    .navheader{
+        background-color: #ffffff86;
+        flex-direction: row;
+        
+    }
+
+    .spa{
+        color: #0f1602;
+    }
+    .link{
+        list-style: none;
+       width: 325px;
+       text-align: center;
+       margin-right: 5vh;
     }
 
     form label {
@@ -61,7 +75,14 @@
     p {
     margin-top: 20px;
     text-align: left;
-    color:white;
+    color:#0f1602;
+    }
+
+    main{
+        background-color: #ffffff86;
+        display: flex;
+        justify-content: center;
+        width:400px;        ;
     }
     
 
